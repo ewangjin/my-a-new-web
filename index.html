@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>libGDX 在线游戏体验</title>
+  <meta name="description" content="基于libGDX的跨平台在线游戏，支持PC和移动端，体验流畅，开源可查。">
+  <link rel="icon" href="https://libgdx.com/favicon.ico">
+  <style>
+    :root {
+      --apple-blue: #007aff;
+      --apple-gray: #f2f2f7;
+      --apple-dark: #1c1c1e;
+      --apple-green: #34c759;
+      --apple-text: #222;
+      --apple-border: #e5e5ea;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--apple-gray);
+      color: var(--apple-text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      width: 100%;
+      background: var(--apple-blue);
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    h1 {
+      margin: 0 0 0.5em 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    main {
+      width: 100%;
+      max-width: 700px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      margin: -2rem 1rem 2rem 1rem;
+      padding: 2rem 1.5rem 2.5rem 1.5rem;
+      box-sizing: border-box;
+    }
+    h2 {
+      color: var(--apple-blue);
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .intro {
+      font-size: 1.1rem;
+      margin-bottom: 1.5em;
+      color: var(--apple-dark);
+    }
+    .iframe-container {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--apple-gray);
+      border: 1px solid var(--apple-border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: #fff;
+    }
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5em 0;
+    }
+    .info-list li {
+      margin-bottom: 0.7em;
+      font-size: 1rem;
+      color: #444;
+    }
+    .links {
+      margin-top: 1.5em;
+      display: flex;
+      gap: 1.5em;
+      flex-wrap: wrap;
+    }
+    .links a {
+      color: var(--apple-blue);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .links a:hover {
+      color: var(--apple-green);
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem 0.5rem 1.5rem 0.5rem;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+      .iframe-container {
+        aspect-ratio: 16/10;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>libGDX 在线游戏体验</h1>
+    <div class="intro">跨平台 · 极速体验 · 开源可查</div>
+  </header>
+  <main>
+    <h2>游戏简介</h2>
+    <p>本网站基于 <strong>libGDX</strong> 框架，提供高性能、跨平台的在线游戏体验。无论你在电脑还是手机上，都能流畅畅玩。</p>
+    <div class="iframe-container">
+      <iframe src="https://ewangjin.xyz/" title="在线游戏" allowfullscreen></iframe>
+    </div>
+    <h2>游戏基本情况</h2>
+    <ul class="info-list">
+      <li>游戏引擎：libGDX（<a href="https://github.com/libgdx/libgdx" target="_blank" rel="noopener">GitHub</a>）</li>
+      <li>支持平台：PC、移动端（iOS/Android）、Web</li>
+      <li>开发语言：Java</li>
+      <li>开源协议：Apache 2.0</li>
+      <li>体验地址：<a href="https://ewangjin.xyz/" target="_blank" rel="noopener">https://ewangjin.xyz/</a></li>
+    </ul>
+    <h2>项目链接</h2>
+    <div class="links">
+      <a href="https://ewangjin.xyz/" target="_blank" rel="noopener">在线游戏</a>
+      <a href="https://github.com/libgdx/libgdx" target="_blank" rel="noopener">libGDX GitHub</a>
+    </div>
+  </main>
+</body>
+</html> 
