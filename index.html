@@ -1,149 +1,87 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>libGDX 在线游戏体验</title>
-  <meta name="description" content="基于libGDX的跨平台在线游戏，支持PC和移动端，体验流畅，开源可查。">
-  <link rel="icon" href="https://libgdx.com/favicon.ico">
-  <style>
-    :root {
-      --apple-blue: #007aff;
-      --apple-gray: #f2f2f7;
-      --apple-dark: #1c1c1e;
-      --apple-green: #34c759;
-      --apple-text: #222;
-      --apple-border: #e5e5ea;
-    }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      background: var(--apple-gray);
-      color: var(--apple-text);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    header {
-      width: 100%;
-      background: var(--apple-blue);
-      color: #fff;
-      padding: 2rem 0 1rem 0;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-    h1 {
-      margin: 0 0 0.5em 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-    }
-    main {
-      width: 100%;
-      max-width: 700px;
-      background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-      margin: -2rem 1rem 2rem 1rem;
-      padding: 2rem 1.5rem 2.5rem 1.5rem;
-      box-sizing: border-box;
-    }
-    h2 {
-      color: var(--apple-blue);
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-      font-size: 1.3rem;
-      font-weight: 600;
-    }
-    .intro {
-      font-size: 1.1rem;
-      margin-bottom: 1.5em;
-      color: var(--apple-dark);
-    }
-    .iframe-container {
-      width: 100%;
-      aspect-ratio: 16/9;
-      background: var(--apple-gray);
-      border: 1px solid var(--apple-border);
-      border-radius: 12px;
-      overflow: hidden;
-      margin-bottom: 1.5em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      background: #fff;
-    }
-    .info-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1.5em 0;
-    }
-    .info-list li {
-      margin-bottom: 0.7em;
-      font-size: 1rem;
-      color: #444;
-    }
-    .links {
-      margin-top: 1.5em;
-      display: flex;
-      gap: 1.5em;
-      flex-wrap: wrap;
-    }
-    .links a {
-      color: var(--apple-blue);
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    .links a:hover {
-      color: var(--apple-green);
-    }
-    @media (max-width: 600px) {
-      main {
-        padding: 1rem 0.5rem 1.5rem 0.5rem;
-      }
-      h1 {
-        font-size: 1.7rem;
-      }
-      h2 {
-        font-size: 1.1rem;
-      }
-      .iframe-container {
-        aspect-ratio: 16/10;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - 史诗级生存冒险游戏 | 在线畅玩</title>
+    <meta name="description" content="Monster Survivors是一款充满挑战的生存冒险游戏，在这里你将面对无尽的怪物，收集资源，升级技能，成为最后的生存者。">
+    <link rel="canonical" href="https://ewangjin.xyz" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#007AFF',
+                        'apple-gray': '#8E8E93',
+                        'apple-dark': '#1D1D1F',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-  <header>
-    <h1>libGDX 在线游戏体验</h1>
-    <div class="intro">跨平台 · 极速体验 · 开源可查</div>
-  </header>
-  <main>
-    <h2>游戏简介</h2>
-    <p>本网站基于 <strong>libGDX</strong> 框架，提供高性能、跨平台的在线游戏体验。无论你在电脑还是手机上，都能流畅畅玩。</p>
-    <div class="iframe-container">
-      <iframe src="https://ewangjin.xyz/" title="在线游戏" allowfullscreen></iframe>
-    </div>
-    <h2>游戏基本情况</h2>
-    <ul class="info-list">
-      <li>游戏引擎：libGDX（<a href="https://github.com/libgdx/libgdx" target="_blank" rel="noopener">GitHub</a>）</li>
-      <li>支持平台：PC、移动端（iOS/Android）、Web</li>
-      <li>开发语言：Java</li>
-      <li>开源协议：Apache 2.0</li>
-      <li>体验地址：<a href="https://ewangjin.xyz/" target="_blank" rel="noopener">https://ewangjin.xyz/</a></li>
-    </ul>
-    <h2>项目链接</h2>
-    <div class="links">
-      <a href="https://ewangjin.xyz/" target="_blank" rel="noopener">在线游戏</a>
-      <a href="https://github.com/libgdx/libgdx" target="_blank" rel="noopener">libGDX GitHub</a>
-    </div>
-  </main>
+<body class="bg-gray-50 text-apple-dark">
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-apple-blue mb-4">
+                Monster Survivors
+            </h1>
+            <p class="text-xl text-center text-apple-gray max-w-3xl mx-auto">
+                在充满危险的怪物世界中生存下来，收集资源，升级技能，成为最后的生存者！
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe 
+                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
+                    class="w-full h-[600px] md:h-[700px]"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <section class="bg-white rounded-xl p-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-apple-blue mb-4">游戏特色</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li>• 丰富的怪物种类和独特的战斗系统</li>
+                    <li>• 多样化的角色技能和升级路线</li>
+                    <li>• 随机生成的地图和资源分布</li>
+                    <li>• 精美的游戏画面和流畅的操作体验</li>
+                </ul>
+            </section>
+
+            <section class="bg-white rounded-xl p-6 shadow-lg">
+                <h2 class="text-2xl font-bold text-apple-blue mb-4">游戏玩法</h2>
+                <div class="text-gray-700 space-y-3">
+                    <p>在 Monster Survivors 中，你将扮演一位勇敢的生存者，在充满危险的世界中探索和战斗。通过击败怪物获取经验值和资源，解锁新的技能和装备，不断提升自己的实力。</p>
+                    <p>游戏采用实时战斗系统，需要你灵活运用各种技能和策略来应对不同的敌人。随着游戏进程的推进，你将面临越来越强大的挑战。</p>
+                </div>
+            </section>
+        </div>
+
+        <section class="mt-8 bg-white rounded-xl p-6 shadow-lg">
+            <h2 class="text-2xl font-bold text-apple-blue mb-4">游戏攻略</h2>
+            <div class="text-gray-700 space-y-4">
+                <p>1. 合理分配技能点：根据你的游戏风格选择合适的技能路线</p>
+                <p>2. 资源管理：合理使用收集到的资源，优先升级核心技能</p>
+                <p>3. 探索地图：不要局限于固定区域，积极探索新区域获取更多资源</p>
+                <p>4. 战术配合：根据不同怪物的特点，采用相应的战术策略</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-dark text-white mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <p class="text-center text-apple-gray">
+                © 2024 Monster Survivors. 保留所有权利。
+            </p>
+        </div>
+    </footer>
 </body>
 </html> 
