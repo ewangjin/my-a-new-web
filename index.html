@@ -1,87 +1,433 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Survivors - 史诗级生存冒险游戏 | 在线畅玩</title>
-    <meta name="description" content="Monster Survivors是一款充满挑战的生存冒险游戏，在这里你将面对无尽的怪物，收集资源，升级技能，成为最后的生存者。">
-    <link rel="canonical" href="https://ewangjin.xyz" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'apple-blue': '#007AFF',
-                        'apple-gray': '#8E8E93',
-                        'apple-dark': '#1D1D1F',
-                    }
-                }
-            }
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>热门游戏总汇 - ewangjin.xyz</title>
+  <link rel="canonical" href="https://ewangjin.xyz/" />
+  <meta name="description" content="热门游戏总汇，聚合全网最火爆的休闲、益智、动作等在线小游戏，随时随地畅玩！">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-apple-dark">
-    <header class="bg-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <h1 class="text-4xl md:text-5xl font-bold text-center text-apple-blue mb-4">
-                Monster Survivors
-            </h1>
-            <p class="text-xl text-center text-apple-gray max-w-3xl mx-auto">
-                在充满危险的怪物世界中生存下来，收集资源，升级技能，成为最后的生存者！
-            </p>
+<body class="bg-gradient-to-br from-gray-100 via-white to-blue-50 text-gray-900 font-sans min-h-screen">
+  <header class="bg-gradient-to-r from-blue-500 to-green-400 py-8 shadow-md mb-4">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white text-center tracking-tight drop-shadow-lg">热门游戏总汇</h1>
+      <p class="text-center text-lg text-blue-100 mt-2 font-medium">全网最火爆的在线小游戏，随时随地畅玩！</p>
+    </div>
+  </header>
+  <main class="max-w-5xl mx-auto px-2 md:px-4 py-4">
+
+    <section class="mb-10">
+      <h2 class="text-xl md:text-2xl font-bold text-red-700 mb-4 pl-2 border-l-8 border-red-400 bg-red-50 py-1 rounded">动作类</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Crazy Office: Slap and Smash!</h3>
+          <p class="text-red-600 text-sm mb-2">释放激情，体验极致动作快感！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/crazy-office-slap-and-smash" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Crazy Office: Slap and Smash! 是一款刺激的动作游戏，快来挑战你的极限吧！</p>
         </div>
-    </header>
-
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
-            <div class="aspect-w-16 aspect-h-9">
-                <iframe 
-                    src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
-                    class="w-full h-[600px] md:h-[700px]"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
-            </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Zombie Horde: Build & Survive</h3>
+          <p class="text-red-600 text-sm mb-2">释放激情，体验极致动作快感！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/zombie-horde-build-survive" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Zombie Horde: Build & Survive 是一款刺激的动作游戏，快来挑战你的极限吧！</p>
         </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-            <section class="bg-white rounded-xl p-6 shadow-lg">
-                <h2 class="text-2xl font-bold text-apple-blue mb-4">游戏特色</h2>
-                <ul class="space-y-3 text-gray-700">
-                    <li>• 丰富的怪物种类和独特的战斗系统</li>
-                    <li>• 多样化的角色技能和升级路线</li>
-                    <li>• 随机生成的地图和资源分布</li>
-                    <li>• 精美的游戏画面和流畅的操作体验</li>
-                </ul>
-            </section>
-
-            <section class="bg-white rounded-xl p-6 shadow-lg">
-                <h2 class="text-2xl font-bold text-apple-blue mb-4">游戏玩法</h2>
-                <div class="text-gray-700 space-y-3">
-                    <p>在 Monster Survivors 中，你将扮演一位勇敢的生存者，在充满危险的世界中探索和战斗。通过击败怪物获取经验值和资源，解锁新的技能和装备，不断提升自己的实力。</p>
-                    <p>游戏采用实时战斗系统，需要你灵活运用各种技能和策略来应对不同的敌人。随着游戏进程的推进，你将面临越来越强大的挑战。</p>
-                </div>
-            </section>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Punchers</h3>
+          <p class="text-red-600 text-sm mb-2">释放激情，体验极致动作快感！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/punchers" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Punchers 是一款刺激的动作游戏，快来挑战你的极限吧！</p>
         </div>
-
-        <section class="mt-8 bg-white rounded-xl p-6 shadow-lg">
-            <h2 class="text-2xl font-bold text-apple-blue mb-4">游戏攻略</h2>
-            <div class="text-gray-700 space-y-4">
-                <p>1. 合理分配技能点：根据你的游戏风格选择合适的技能路线</p>
-                <p>2. 资源管理：合理使用收集到的资源，优先升级核心技能</p>
-                <p>3. 探索地图：不要局限于固定区域，积极探索新区域获取更多资源</p>
-                <p>4. 战术配合：根据不同怪物的特点，采用相应的战术策略</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-apple-dark text-white mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <p class="text-center text-apple-gray">
-                © 2024 Monster Survivors. 保留所有权利。
-            </p>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Zombie Space Episode 2</h3>
+          <p class="text-red-600 text-sm mb-2">释放激情，体验极致动作快感！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/zombie-space-episode-2-ajp" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Zombie Space Episode 2 是一款刺激的动作游戏，快来挑战你的极限吧！</p>
         </div>
-    </footer>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Cougar Simulator: Big Cats</h3>
+          <p class="text-red-600 text-sm mb-2">释放激情，体验极致动作快感！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/cougar-simulator-big-cats" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Cougar Simulator: Big Cats 是一款刺激的动作游戏，快来挑战你的极限吧！</p>
+        </div>
+        </div></section>
+
+    <section class="mb-10">
+      <h2 class="text-xl md:text-2xl font-bold text-blue-700 mb-4 pl-2 border-l-8 border-blue-400 bg-blue-50 py-1 rounded">休闲类</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Piece of Cake: Merge and Bake</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/piece-of-cake-merge-and-bake" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Piece of Cake: Merge and Bake 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Doodle Road</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/doodle-road" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Doodle Road 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Crazy Dummy Swing Multiplayer</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/crazy-dummy-swing-multiplayer" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Crazy Dummy Swing Multiplayer 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Bad Cat - Granny's Return</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/bad-cat---granny-s-return" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Bad Cat - Granny's Return 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Dalgona Candy Honeycomb Cookie</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/dalgona-candy-honeycomb-cookie-kam" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Dalgona Candy Honeycomb Cookie 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Snake VS Block</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/snake-vs-block" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Snake VS Block 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Color Music Hop Ball Games</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/color-music-hop-ball-games" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Color Music Hop Ball Games 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Empire City</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/empire-city" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Empire City 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Daily Emoji Hunt</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/daily-emoji-hunt" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Daily Emoji Hunt 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Fork N Sausage</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/fork-n-sausage" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Fork N Sausage 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Pottery Master</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/pottery-master" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Pottery Master 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Pretty Tidy</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/pretty-tidy" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Pretty Tidy 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Blob Opera</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/blob-opera" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Blob Opera 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Animal DNA Run</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/animal-dna-run" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Animal DNA Run 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Screamals</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/screamals" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Screamals 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Pencil Rush</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/pencil-rush" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Pencil Rush 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Layers Roll</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/layers-roll" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Layers Roll 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Scale of the Universe 2</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/scale-of-the-universe-2" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Scale of the Universe 2 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">HappyVille Merge Farm</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/happyville-merge-farm-gtu" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">HappyVille Merge Farm 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Obby Cards: The Legend Hunt</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/obby-cards-the-legend-hunt" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Obby Cards: The Legend Hunt 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">I Don't Even Know</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/i-dont-even-know" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">I Don't Even Know 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Catch Tiles: Piano Game</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/catch-tiles-piano-game" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Catch Tiles: Piano Game 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Just Hit the Button</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/just-hit-the-button" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Just Hit the Button 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Dogs vs Aliens</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/dogs-vs-aliens" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Dogs vs Aliens 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Hydraulic Press 2D ASMR</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/hydraulic-press-2d-asmr" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Hydraulic Press 2D ASMR 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Merge Run</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/merge-run" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Merge Run 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Draw Line</h3>
+          <p class="text-blue-600 text-sm mb-2">轻松休闲，随时随地畅玩！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/draw-line" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Draw Line 是一款轻松有趣的休闲小游戏，适合所有玩家。</p>
+        </div>
+        </div></section>
+
+    <section class="mb-10">
+      <h2 class="text-xl md:text-2xl font-bold text-purple-700 mb-4 pl-2 border-l-8 border-purple-400 bg-purple-50 py-1 rounded">益智类</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Diamant: Sky Stories Match 3</h3>
+          <p class="text-purple-600 text-sm mb-2">动脑益智，挑战你的思维极限！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/diamant-match-3-sky-story" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Diamant: Sky Stories Match 3 是一款益智解谜游戏，锻炼你的大脑。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Image Crossword</h3>
+          <p class="text-purple-600 text-sm mb-2">动脑益智，挑战你的思维极限！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/image-crossword-far" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Image Crossword 是一款益智解谜游戏，锻炼你的大脑。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Stupidity Test</h3>
+          <p class="text-purple-600 text-sm mb-2">动脑益智，挑战你的思维极限！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/stupidity-test" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Stupidity Test 是一款益智解谜游戏，锻炼你的大脑。</p>
+        </div>
+        </div></section>
+
+    <section class="mb-10">
+      <h2 class="text-xl md:text-2xl font-bold text-yellow-700 mb-4 pl-2 border-l-8 border-yellow-400 bg-yellow-50 py-1 rounded">驾驶类</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Boom Karts</h3>
+          <p class="text-yellow-600 text-sm mb-2">速度与激情，驾驶乐趣无穷！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/boom-karts" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Boom Karts 是一款驾驶竞速游戏，体验速度与激情。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Derby Crash</h3>
+          <p class="text-yellow-600 text-sm mb-2">速度与激情，驾驶乐趣无穷！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/derbycrash" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Derby Crash 是一款驾驶竞速游戏，体验速度与激情。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">City Car Driving Simulator: Online</h3>
+          <p class="text-yellow-600 text-sm mb-2">速度与激情，驾驶乐趣无穷！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/city-car-driving-simulator-online" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">City Car Driving Simulator: Online 是一款驾驶竞速游戏，体验速度与激情。</p>
+        </div>
+        </div></section>
+
+    <section class="mb-10">
+      <h2 class="text-xl md:text-2xl font-bold text-green-700 mb-4 pl-2 border-l-8 border-green-400 bg-green-50 py-1 rounded">冒险类</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Duo</h3>
+          <p class="text-green-600 text-sm mb-2">探索未知，开启冒险之旅！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/duo-kjn" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Duo 是一款冒险探索游戏，乐趣无穷。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Firestone Idle RPG</h3>
+          <p class="text-green-600 text-sm mb-2">探索未知，开启冒险之旅！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/firestone-idle-rpg" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Firestone Idle RPG 是一款冒险探索游戏，乐趣无穷。</p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Exhibit of Sorrows</h3>
+          <p class="text-green-600 text-sm mb-2">探索未知，开启冒险之旅！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/exhibit-of-sorrows" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Exhibit of Sorrows 是一款冒险探索游戏，乐趣无穷。</p>
+        </div>
+        </div></section>
+
+    <section class="mb-10">
+      <h2 class="text-xl md:text-2xl font-bold text-rose-700 mb-4 pl-2 border-l-8 border-rose-400 bg-rose-50 py-1 rounded">美妆类</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+        <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-4 flex flex-col items-center border border-gray-100">
+          <h3 class="text-lg font-semibold mb-1 text-gray-800">Knee Case Simulator</h3>
+          <p class="text-rose-600 text-sm mb-2">美妆体验，焕发新颜！</p>
+          <div class="w-full aspect-w-16 aspect-h-9 mb-2">
+            <iframe src="https://www.crazygames.com/embed/knee-case-simulator" style="width: 100%; height: 100%;" frameborder="0" allow="gamepad *;"></iframe>
+          </div>
+          <p class="text-gray-600 text-xs text-center">Knee Case Simulator 是一款美妆类游戏，体验变美的乐趣。</p>
+        </div>
+        </div></section>
+
+  </main>
+  <footer class="bg-gray-100 text-center text-gray-500 py-6 mt-12 border-t text-sm">
+    &copy; 2024 ewangjin.xyz | 热门游戏总汇
+  </footer>
 </body>
-</html> 
+</html>
