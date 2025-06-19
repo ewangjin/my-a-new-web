@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsFlow 新闻聚合</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">🌐</span>
+      <span class="logo-text">NewsFlow</span>
+    </div>
+    <div class="header-actions">
+      <button class="icon-btn" title="新闻列表"><span>📰</span></button>
+      <button class="icon-btn" title="时间线"><span>🕒</span></button>
+    </div>
+  </header>
+  <main class="container">
+    <section class="stats">
+      <div class="stat-card">
+        <div class="stat-title">总文章数</div>
+        <div class="stat-value">8</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title">今日新闻</div>
+        <div class="stat-value stat-up">0</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-title">活跃来源</div>
+        <div class="stat-value stat-globe">6</div>
+      </div>
+    </section>
+    <section class="search-section">
+      <input type="text" class="search-input" placeholder="搜索文章、主题或作者...">
+    </section>
+    <section class="filter-section">
+      <div class="filter-sources">
+        <span>来源筛选：</span>
+        <button class="source-btn">路透社</button>
+        <button class="source-btn">BBC</button>
+        <button class="source-btn">CNN</button>
+        <button class="source-btn">推特</button>
+        <button class="source-btn">TechCrunch</button>
+        <button class="source-btn">卫报</button>
+      </div>
+      <div class="filter-categories">
+        <button class="category-btn active">全部</button>
+        <button class="category-btn">科技</button>
+        <button class="category-btn">商业</button>
+        <button class="category-btn">科学</button>
+        <button class="category-btn">政治</button>
+        <button class="category-btn">体育</button>
+      </div>
+    </section>
+    <section class="news-list">
+      <div class="news-card">
+        <div class="news-img" style="background-image:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80');">
+          <span class="news-source techcrunch">TechCrunch</span>
+          <button class="view-btn" title="预览"><span>👁️</span></button>
+        </div>
+        <div class="news-content">
+          <h3 class="news-title">以色列AI突破性进展引发全球关注</h3>
+          <p class="news-desc">以色列科技公司宣布新一代人工智能技术，有望推动多行业变革。</p>
+          <div class="news-tags">
+            <span>AI</span><span>科技</span><span>创新</span>
+          </div>
+          <div class="news-meta">
+            <span>作者：李明</span>
+            <span>5分钟阅读</span>
+            <span>1天前</span>
+          </div>
+          <a href="#" class="read-btn" target="_blank">阅读全文</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80');">
+          <span class="news-source reuters">路透社</span>
+          <button class="view-btn" title="预览"><span>👁️</span></button>
+        </div>
+        <div class="news-content">
+          <h3 class="news-title">伊朗与以色列冲突升级，国际社会密切关注</h3>
+          <p class="news-desc">多国呼吁双方克制，防止局势进一步恶化。</p>
+          <div class="news-tags">
+            <span>国际</span><span>政治</span><span>中东</span>
+          </div>
+          <div class="news-meta">
+            <span>作者：王芳</span>
+            <span>7分钟阅读</span>
+            <span>2天前</span>
+          </div>
+          <a href="#" class="read-btn" target="_blank">阅读全文</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img" style="background-image:url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80');">
+          <span class="news-source bbc">BBC</span>
+          <button class="view-btn" title="预览"><span>👁️</span></button>
+        </div>
+        <div class="news-content">
+          <h3 class="news-title">全球市场因中东局势波动</h3>
+          <p class="news-desc">经济学家分析以色列与伊朗冲突对全球市场的影响。</p>
+          <div class="news-tags">
+            <span>财经</span><span>经济</span><span>市场</span>
+          </div>
+          <div class="news-meta">
+            <span>作者：张伟</span>
+            <span>4分钟阅读</span>
+            <span>2天前</span>
+          </div>
+          <a href="#" class="read-btn" target="_blank">阅读全文</a>
+        </div>
+      </div>
+      <!-- 更多新闻卡片... -->
+    </section>
+  </main>
+  <script>
+  function createNewsCard(news) {
+    return `
+      <div class="news-card">
+        <div class="news-img" style="background-image:url('${news['图片链接']}');">
+          <span class="news-source">${news['媒体名称']}</span>
+          <button class="view-btn" title="预览"><span>👁️</span></button>
+        </div>
+        <div class="news-content">
+          <h3 class="news-title">${news['新闻标题']}</h3>
+          <p class="news-desc">${news['新闻简介'] || ''}</p>
+          <div class="news-tags">
+            ${(news['标签'] || '').split(',').map(tag => `<span>${tag.trim()}</span>`).join('')}
+          </div>
+          <div class="news-meta">
+            <span>作者：${news['作者'] || ''}</span>
+            <span>${news['阅读时间'] || ''}</span>
+            <span>${news['时间'] || ''}</span>
+          </div>
+          <a href="${news['内容链接']}" class="read-btn" target="_blank">阅读全文</a>
+        </div>
+      </div>
+    `;
+  }
+
+  fetch('news.json')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+      const newsList = document.querySelector('.news-list');
+      newsList.innerHTML = data.map(createNewsCard).join('');
+    });
+  </script>
+</body>
+</html> 
