@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI约会规划助手</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#F59E0B',
+                        accent: '#EC4899',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            }
+            .timeline-line {
+                @apply absolute left-3 top-0 bottom-0 w-0.5 bg-gray-200;
+            }
+            .timeline-dot {
+                @apply absolute left-[-34px] top-1 w-6 h-6 rounded-full bg-primary border-4 border-white;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- 页面内容 -->
+    <header class="bg-gradient-to-r from-primary to-blue-600 text-white py-12 px-4 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">AI约会规划助手</h1>
+        <p class="max-w-2xl mx-auto opacity-90">让每一次约会都成为难忘的回忆</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-10">
+        <!-- 原有的约会行程内容 -->
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <!-- 这里是原有的北京展览馆半日约会行程内容 -->
+                <div class="p-6 md:p-8">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">北京展览馆半日约会行程</h2>
+                    <div class="grid md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-blue-50 p-5 rounded-lg">
+                            <div class="flex items-center mb-3">
+                                <i class="fa fa-map-marker text-primary text-xl mr-3"></i>
+                                <h3 class="font-bold text-lg">核心地点</h3>
+                            </div>
+                            <p class="text-gray-700">北京展览馆</p>
+                            <p class="text-sm text-gray-500 mt-1">西城区西直门外大街135号</p>
+                        </div>
+                        <div class="bg-green-50 p-5 rounded-lg">
+                            <div class="flex items-center mb-3">
+                                <i class="fa fa-clock-o text-green-500 text-xl mr-3"></i>
+                                <h3 class="font-bold text-lg">建议时间</h3>
+                            </div>
+                            <p class="text-gray-700">周六下午 14:00-18:00</p>
+                            <p class="text-sm text-gray-500 mt-1">约4小时</p>
+                        </div>
+                        <div class="bg-purple-50 p-5 rounded-lg">
+                            <div class="flex items-center mb-3">
+                                <i class="fa fa-heart text-pink-500 text-xl mr-3"></i>
+                                <h3 class="font-bold text-lg">氛围特点</h3>
+                            </div>
+                            <p class="text-gray-700">文艺 · 轻松 · 有格调</p>
+                            <p class="text-sm text-gray-500 mt-1">适合初次或早期约会</p>
+                        </div>
+                    </div>
+
+                    <!-- 行程时间线 -->
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4 pb-2 border-b border-gray-100">行程时间线</h3>
+                        <div class="relative pl-8 space-y-8">
+                            <div class="timeline-line"></div>
+                            
+                            <div class="relative">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="font-bold text-lg">14:00-14:15 | 抵达与汇合</h4>
+                                        <span class="bg-blue-100 text-primary text-xs px-2 py-1 rounded">起点</span>
+                                    </div>
+                                    <p class="text-gray-600">建议男方提前15分钟到达，在展览馆正门口等候。着装建议休闲偏正式，展现品味又不过于拘谨。</p>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <div class="timeline-dot"></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h4 class="font-bold text-lg">14:15-16:00 | 主题展览参观</h4>
+                                        <span class="bg-green-100 text-green-600 text-xs px-2 py-1 rounded">核心活动</span>
+                                    </div>
+                                    <p class="text-gray-600">参观当前热门展览（提前查询展览信息），建议从艺术或文化类展览开始，为后续交流提供话题素材。参观时保持适中节奏，避免过快或过慢。</p>
+                                </div>
+                            </div>
+
+                            <!-- 更多时间线内容 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 输入约会需求区域 -->
+        <section class="mb-16" id="inputSection">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">输入约会需求</h2>
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover max-w-2xl mx-auto">
+                <textarea id="date需求" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition duration-300" rows="4" placeholder="请输入您的约会需求...例如：我想在周六下午和女朋友在北京展览馆附近约会，希望有文艺氛围，预算300元左右"></textarea>
+                <button onclick="analyzeRequirements()" class="mt-4 w-full bg-primary hover:bg-primary/90 text-white py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                    <i class="fa fa-magic mr-2"></i> 分析需求并生成行程
+                </button>
+            </div>
+        </section>
+
+        <!-- 结果展示区域 -->
+        <section id="resultSection" class="mb-16 hidden">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">AI生成的行程建议</h2>
+            <div id="resultContent" class="max-w-3xl mx-auto"></div>
+            <div class="flex justify-center gap-4 mt-8">
+                <button onclick="confirmSchedule()" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg transition duration-300">
+                    <i class="fa fa-check mr-2"></i> 确认并使用此行程
+                </button>
+                <button onclick="resetAnalysis()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-6 rounded-lg transition duration-300">
+                    <i class="fa fa-refresh mr-2"></i> 重新生成
+                </button>
+            </div>
+        </section>
+
+        <!-- 最终行程展示区域 -->
+        <section id="finalScheduleSection" class="mb-16 hidden">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800 mb-3">您的专属约会安排</h2>
+                <p class="text-gray-500">由AI精心规划，为您打造完美约会体验</p>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
+            </div>
+            <div id="finalScheduleContent" class="max-w-3xl mx-auto"></div>
+            <div class="text-center mt-10">
+                <button onclick="startNewAnalysis()" class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300">
+                    <i class="fa fa-plus mr-2"></i> 规划新的约会
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 px-4 text-center">
+        <p>AI约会规划助手 &copy; 2023 | 让每一次约会都值得回忆</p>
+    </footer>
+
+    <script>
+        // 分析需求函数
+        function analyzeRequirements() {
+            const input = document.getElementById('date需求').value.trim();
+            if (!input) {
+                alert('请输入约会需求');
+                return;
+            }
+
+            // 显示加载状态
+            const button = document.querySelector('#inputSection button');
+            button.disabled = true;
+            button.innerHTML = '<i class="fa fa-spinner fa-spin mr-2"></i> 分析中...';
+
+            // 调用API
+            fetch('https://api.minimaxi.com/v1/text/chatcompletion_v2', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJHcm91cE5hbWUiOiLnjovov5siLCJVc2VyTmFtZSI6IueOi-i_myIsIkFjY291bnQiOiIiLCJTdWJqZWN0SUQiOiIxOTM1MzQxNDg3NTY2ODg5Mzk2IiwiUGhvbmUiOiIxMzYwODg2NzA4OCIsIkdyb3VwSUQiOiIxOTM1MzQxNDg3NTU4NTAwNzg4IiwiUGFnZU5hbWUiOiIiLCJNYWlsIjoiIiwiQ3JlYXRlVGltZSI6IjIwMjUtMDYtMTkgMTk6NTA6NDciLCJUb2tlblR5cGUiOjEsImlzcyI6Im1pbmltYXgifQ.BYesTLnyrN73mrky8W7vLpYrytcoBcS0cNy1JDJhoEqgtDQ1S51G_08Z9aloSd4AvMsd_frWQMQ0GuznNhixl9HAb8fmIX9JFEBG6OimHpEZDnu5qvuHvFDElgUo90yEN9dYPdiu96lI1fvVLXNrT_vi6v6UBJQoXlaIMepiC4zjpATwzIssZ-c2AZMnKtdg9XgH7W-8VYj3uON5NgeUKx4puSlDGz2qq7x1mZse2o0akvb66azfRIfQUdVTPm3yxVeCkKS3gWhls4jtAVcIT0qp62RTOG2vFl0ej7lGGdbjptoLvW3oH9Lqe4fXoi3eisIr1zq6Kmmubn2r3zlkRA'
+                },
+                body: JSON.stringify({
+                    "model": "MiniMax-M1",
+                    "messages": [
+                        {
+                            "role": "system",
+                            "name": "MiniMax AI",
+                            "content": "你是一个专业的约会规划助手，需要根据用户需求生成详细的约会行程安排。请按照时间顺序排列活动，每个活动包含具体时间、地点、活动内容和注意事项。"
+                        },
+                        {
+                            "role": "user",
+                            "name": "用户",
+                            "content": `分析以下约会需求并生成行程建议：${input}`
+                        }
+                    ]
+                })
+            })
+            .then(response => {
+                if (!response.ok) throw new Error('API请求失败: ' + response.status);
+                return response.json();
+            })
+            .then(data => {
+                if (!data.choices || !data.choices[0] || !data.choices[0].message) {
+                    throw new Error('API返回格式不正确');
+                }
+                // 显示结果
+                document.getElementById('resultContent').innerHTML = `
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <pre class="whitespace-pre-wrap text-gray-700">${data.choices[0].message.content}</pre>
+                    </div>
+                `;
+                // 切换显示区域
+                document.getElementById('inputSection').classList.add('hidden');
+                document.getElementById('resultSection').classList.remove('hidden');
+            })
+            .catch(error => {
+                console.error('错误:', error);
+                alert('分析失败: ' + error.message);
+            })
+            .finally(() => {
+                // 恢复按钮状态
+                button.disabled = false;
+                button.innerHTML = '<i class="fa fa-magic mr-2"></i> 分析需求并生成行程';
+            });
+        }
+
+        // 确认行程
+        function confirmSchedule() {
+            const rawContent = document.querySelector('#resultContent pre').textContent;
+            const buttons = document.querySelectorAll('#resultSection button');
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                btn.innerHTML = '<i class="fa fa-spinner fa-spin mr-2"></i> 生成中...';
+            });
+
+            // 格式化内容
+            const formattedContent = formatScheduleContent(rawContent);
+
+            setTimeout(() => {
+                document.getElementById('finalScheduleContent').innerHTML = formattedContent;
+                document.getElementById('resultSection').classList.add('hidden');
+                document.getElementById('finalScheduleSection').classList.remove('hidden');
+            }, 1500);
+        }
+
+        // 重新分析
+        function resetAnalysis() {
+            document.getElementById('date需求').value = '';
+            document.getElementById('resultSection').classList.add('hidden');
+            document.getElementById('inputSection').classList.remove('hidden');
+        }
+
+        // 开始新的分析
+        function startNewAnalysis() {
+            document.getElementById('date需求').value = '';
+            document.getElementById('finalScheduleSection').classList.add('hidden');
+            document.getElementById('inputSection').classList.remove('hidden');
+        }
+
+        // 格式化行程内容
+        function formatScheduleContent(content) {
+            // 简单的格式化示例
+            const lines = content.split('\n');
+            let html = '<div class="space-y-6">';
+            let inTimeBlock = false;
+
+            lines.forEach(line => {
+                line = line.trim();
+                if (!line) return;
+
+                // 检测时间块
+                if (line.match(/\d{2}:\d{2}/)) {
+                    if (inTimeBlock) html += '</div>';
+                    html += `
+                        <div class="bg-white p-5 rounded-xl shadow-md">
+                            <h3 class="font-bold text-lg text-primary mb-3">${line}</h3>
+                    `;
+                    inTimeBlock = true;
+                } else if (inTimeBlock) {
+                    html += `<p class="text-gray-700 mb-2">${line}</p>`;
+                } else {
+                    html += `<div class="bg-gray-50 p-4 rounded-lg"><p class="text-gray-700">${line}</p></div>`;
+                }
+            });
+
+            if (inTimeBlock) html += '</div>';
+            html += '</div>';
+            return html;
+        }
+
+        // 回车提交功能
+        document.getElementById('date需求').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                analyzeRequirements();
+            }
+        });
+    </script>
+</body>
+</html>
